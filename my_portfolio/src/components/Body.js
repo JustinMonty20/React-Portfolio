@@ -1,5 +1,6 @@
 import React from "react"
-import { Box, Collapsible } from "grommet"
+import { Box, Collapsible, Layer, Button} from "grommet"
+import {FormClose} from "grommet-icons"
 
 
 
@@ -10,16 +11,36 @@ const Body = props => {
                 app body
             </Box>
             
-            { props.side &&
-                <Box 
-                width='medium'
-                background='light-2'
-                elevation='small'
+            { !props.side || props.sz !== 'small' ? (
+                <Collapsible direction="vertical" open = {props.side}>
+                    <Box 
+                    flex
+                    width='medium'
+                    background='light-2'
+                    elevation='small'
+                    align='center'
+                    justify='center'>
+                    sidebar
+                    </Box>
+                </Collapsible>
+            ) : 
+            (<Layer>
+                <Box background='light-2'
+                tag='header'
+                justify='end'
+                align='center'
+                direction='row'>
+                    <Button icon ={<FormClose/>} 
+                    onClick= {()=> props.setShow(false)}/>
+                </Box>
+                <Box fill
+                background="light-2"
                 align='center'
                 justify='center'>
                 sidebar
-                </Box>
-            }
+                </Box>    
+            </Layer>
+            )}
            
         </Box>
     )
