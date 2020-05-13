@@ -11,6 +11,10 @@ body {
     justify-content: flex-end;
 }
 
+#name {
+    color: #2191FB;
+}
+
 .navlink{
     color: whitesmoke;
     text-decoration: none;

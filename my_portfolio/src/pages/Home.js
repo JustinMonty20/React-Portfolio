@@ -11,9 +11,10 @@ const Home = () => {
                     <Head/>  
                     <Box direction= "row" justify="around">   
                         <Box alignSelf="center">
-                            <h3>hey</h3>
+                            <h3 id ="name">Hi I'm Justin Montgomery -</h3>
                             <div >
-                                <p>my name is justin montgomery</p>
+                                <p>Web Developer</p> 
+                                <p>dedicated to making beautiful sites that work</p>
                             </div>
                         </Box>
                         <Box >
