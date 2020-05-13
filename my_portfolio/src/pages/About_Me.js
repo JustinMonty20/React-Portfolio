@@ -2,11 +2,11 @@ import React from "react"
 import Head from "../components/Head"
 
 const AboutMe = () => {
-    return (
-        <div>   
+   return  (
+       <div>
             <Head/>
-        </div>
-    )
+       </div>
+   )
 }
 
 export default AboutMe

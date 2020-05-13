@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMe from "./pages/About_Me"
 import Contact from './pages/Contact';
 import {Grommet} from "grommet"
+import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
@@ -15,7 +16,7 @@ const theme = {
         size: "18px",
         height: "20px"
       }
-    }
+    },
   }
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
    <Grommet theme ={theme}>
     <Router>
       <Switch>
-      <Route exact path = "/" component={AboutMe}/>
+      <Route exact path = "/" component={Home}/>
+      <Route exact path ="/about" component={AboutMe}></Route>
       <Route exact path = "/contact" component ={Contact}/>
       <Route exact path ="/projects" component ={Projects}/>
       </Switch>
