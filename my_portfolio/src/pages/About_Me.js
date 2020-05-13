@@ -1,14 +1,11 @@
 import React from "react"
-import Heading from "../components/Heading"
+import Head from "../components/Head"
 
 const AboutMe = () => {
     return (
-  
-            <div>
-            This is my about me
-            <Heading/>
-            </div>
-
+        <div>   
+            <Head/>
+        </div>
     )
 }
 

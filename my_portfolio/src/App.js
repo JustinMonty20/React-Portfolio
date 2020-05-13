@@ -5,9 +5,18 @@ import {Grommet} from "grommet"
 import Projects from "./pages/Projects"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
-
-
-
+const theme = {
+    global: {
+      colors:{
+        brand: "#2637FF",
+      },
+      font: {
+        family: "Roboto",
+        size: "18px",
+        height: "20px"
+      }
+    }
+  }
 
 
 
@@ -15,7 +24,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 function App() {
  return (
-   <Grommet>
+   <Grommet theme ={theme}>
     <Router>
       <Switch>
       <Route exact path = "/" component={AboutMe}/>
