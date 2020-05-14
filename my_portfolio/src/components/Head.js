@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom"
 
 const Head = () => {
     return (
-     <Nav background="dark-1" justify ="around" align= "center" pad="small" direction="row">
+     <Nav background="dark-1" justify ="around" align= "center" pad="small" direction="row" id ="nav">
             <NavLink className = "navlink hvr-grow" exact to ="/"><span><Home/></span></NavLink>
             <NavLink className = "navlink hvr-grow" exact to = "/about">About Me</NavLink>
             <NavLink className = "navlink hvr-grow" exact to = "/contact">Contact</NavLink>

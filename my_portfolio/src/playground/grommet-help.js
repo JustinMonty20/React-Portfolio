@@ -72,3 +72,15 @@
 // )}
 //   </ResponsiveContext.Consumer>
 
+// <Box direction= "row" justify="around">   
+// <Box alignSelf="center">
+//     <h3 id ="name">Hi I'm Justin Montgomery -</h3>
+//     <div >
+//         <p>Web Developer</p> 
+//         <p>dedicated to making beautiful sites that work</p>
+//     </div>
+// </Box>
+// <Box>
+//     <Picture/>
+// </Box>
+// </Box>   
