@@ -3,6 +3,7 @@ import Education from "../components/Education"
 import Foot from "../components/Foot"
 import Head from "../components/Head"
 import Container from "../components/Container"
+import Interests from "../components/Interests"
 import {Box} from "grommet"
 
 
@@ -10,11 +11,9 @@ const AboutMe = () => {
    return  (
        <Container>
             <Head/>
-                <Box direction="row" justify="center">
+                <Box direction="column" align="center">
                     <Education/>
-                    <Box className="text-container" justify="center" margin="medium">
-                    <p>hi</p>
-                    </Box>
+                    <Interests/>
                 </Box>
             <Foot/>
        </Container>

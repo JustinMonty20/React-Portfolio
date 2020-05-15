@@ -7,6 +7,7 @@ const styles = {
     }
 }
 
+const skills = ["HTML","CSS (FlexBox and Grid)","JavaScript","SQL and MongoDB","React","Node.js and Express"]
 const Education = () => {
     return (
         <Box className ="text-container" margin="medium" justify="center">
@@ -21,12 +22,7 @@ const Education = () => {
                         <Box margin="small">
                             <h4>Skills aquired:</h4>
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>CSS (FlexBox and Grid)</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL and MongoDB</li>
-                                    <li>React</li>
-                                    <li>Node.js and Express</li>
+                                 {skills.map(skill=> <li>{skill}</li>)}
                                 </ul>
                         </Box>
                     </Box>
