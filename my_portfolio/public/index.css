@@ -1,7 +1,15 @@
 body {
     margin: 0;
 }
+h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
 
+li{
+    margin: 2px;
+}
 #container {
     background-color: #FBFAF5;
     width: 100vw;
@@ -18,13 +26,13 @@ body {
     color: #2191FB;
 }
 
-#text-container {
+.text-container {
     width: 500px;
     max-width: 80%%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1px;
     padding: "10px";
-    box-shadow: 0 0 10px 1px;
+    box-shadow: 0 0 15px 1px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,9 +1,10 @@
 import React from "react"
+import Foot from "../components/Foot"
 import Head from "../components/Head"
 import Container from "../components/Container"
 import Picture from "../components/Picture"
-import {Box, Footer, Anchor} from "grommet"
-import {Twitter, MailOption} from "grommet-icons"
+import {Box} from "grommet"
+
 
 const Home = () => {
     return (       
@@ -12,20 +13,17 @@ const Home = () => {
                     <Head/>  
                     <Box direction= "row" justify="around">   
                         <Box alignSelf="center">
-                            <div id="text-container">
-                            <h3 id ="name">Hi I'm Justin Montgomery</h3>
+                            <div className="text-container">
+                            <h3 id ="name">Hi I'm Justin</h3>
                                 <p>Full Stack Web Developer</p> 
-                                <p>Dedicated to making beautiful sites that work.</p>
+                                <p>Providing the core functionality that your site needs.</p>
                             </div>
                         </Box>
-                        <Box >
+                        <Box>
                             <Picture/>
                         </Box>
+                            <Foot/>
                     </Box>    
-                    <Footer background="dark-1" pad="medium" id="footer" justify="center">
-                        <Anchor className="hvr-grow" href = "https://twitter.com/JustinMunty222" target="_blank"><span><Twitter size="medium"/></span></Anchor>
-                        <Anchor className="hvr-grow" href="mailto:montgomerycodepro@gmail.com"><span><MailOption/></span></Anchor>
-                    </Footer>
                 </Container>
             </div>
         
